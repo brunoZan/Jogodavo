@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 0;
+    width: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    --color-divs:#333333;
+}
+
+.container {
+    background: cornflowerblue;
+    height: 500px;
+    width: 500px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    
+}
+
+.container > div {
+    background: var(--color-divs);
+    padding-left: 6%;
+    padding-top: 6%;
+}
+
+.container > div button {
+    width: 95%;
+    height: 95%;
+    font-size: 20px;
+}
+
+.buttons {
+    background: #333333;
+    display: grid;
+    width: 300px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 4vh ;
+    gap: 10px;
+
+    /* justify-items: center;
+    align-items: center;
+     */
+}
+.buttons > button {
+    width: 65px;
+    height: 23px;
+    
+}
